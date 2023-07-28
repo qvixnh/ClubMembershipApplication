@@ -1,5 +1,5 @@
 ﻿using System.Text.RegularExpressions;
-
+using System;
 namespace FieldValidatorAPI
 {
     //form field is not left empty
@@ -9,7 +9,7 @@ namespace FieldValidatorAPI
     //validating a text input field value against a regular expression pattern
     public delegate bool PatternMatchValidDel(string fieldVal, string pattern);
     public delegate bool CompareFieldsValidDel(string fieldVal, string fieldValCOmpare);
-    public class CommonFieldValidatorFunction
+    public class CommonFieldValidatorFunctions
     {
         //set up static attribute for above delegates
         private static RequiredValidDel _requiredValidDel = null;
