@@ -45,6 +45,7 @@ namespace ClubMembershipApplication.FieldValidators
         {
             _fieldValidatorDel = new FieldValidatorDel(FieldValidator);
 
+
             _requiredValidDel = CommonFieldValidatorFunctions.RequiredValidDel;
             _stringLengthValidDel = CommonFieldValidatorFunctions.StringLengthValidDel;
             _dateValidDel = CommonFieldValidatorFunctions.DateValidDel;

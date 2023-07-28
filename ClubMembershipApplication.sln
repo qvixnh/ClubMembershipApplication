@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClubMembershipApplication", "ClubMembershipApplication\ClubMembershipApplication.csproj", "{53B8FBDF-A2EB-4889-BBF2-BD792C6C08D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FieldValidatorAPI", "FieldValidatorAPI\FieldValidatorAPI.csproj", "{561EA732-77A6-41BE-B9B8-3993779D3D43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FieldValidatorAPI", "FieldValidatorAPI\FieldValidatorAPI.csproj", "{561EA732-77A6-41BE-B9B8-3993779D3D43}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
