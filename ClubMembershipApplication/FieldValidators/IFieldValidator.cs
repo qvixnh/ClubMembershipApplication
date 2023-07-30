@@ -12,6 +12,6 @@ namespace ClubMembershipApplication.FieldValidators
     {
         void InitialiseValidatorDelegates();
         string[] FieldArray { get; }
-        FieldValidatorDel validatorDel { get; }
+        FieldValidatorDel ValidatorDel { get; }
     }
 }

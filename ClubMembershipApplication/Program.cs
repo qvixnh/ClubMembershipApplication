@@ -1,4 +1,6 @@
 ﻿using System;
+using ClubMembershipApplication;
+using ClubMembershipApplication.Views;
 using FieldValidatorAPI;
 
 namespace ClubMemberShipApplicatoin
@@ -7,7 +9,12 @@ namespace ClubMemberShipApplicatoin
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
+            //clean client code
+            IView mainView = Factory.GeMainViewObject();
+            //run the application
+            mainView.RunView();
+
+            Console.ReadKey();
         }
     }
 }

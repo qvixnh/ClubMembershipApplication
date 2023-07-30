@@ -46,9 +46,8 @@ namespace ClubMembershipApplication.FieldValidators
                 return _fieldArray;
             }
         }
-        public FieldValidatorDel ValidatorDel => _fieldValidatorDel;
 
-        public FieldValidatorDel validatorDel => throw new NotImplementedException();
+        public FieldValidatorDel ValidatorDel => _fieldValidatorDel;
 
         public void InitialiseValidatorDelegates()
         {
@@ -83,7 +82,7 @@ namespace ClubMembershipApplication.FieldValidators
                     break;
                 case FieldConstants.UserRegistrationField.Password:
                     fieldInvalidMessage = (!_requiredValidDel(fieldValue)) ? $"You must enter a value for field: {Enum.GetName(typeof(FieldConstants.UserRegistrationField), userRegistrationField)}{Environment.NewLine}" : "";
-                    fieldInvalidMessage = (fieldInvalidMessage == "" && !_patternMatchValidDel(fieldValue, CommonRegularExpressionValidationPattern.Email_Address_RegEx_Pattern)) ? $"Your pasword mút contain at least 1 small-case letter, 1 capital letter, 1 special character and the length should be between 6 - 10 characters{Environment.NewLine}" : fieldInvalidMessage;
+                    fieldInvalidMessage = (fieldInvalidMessage == "" && !_patternMatchValidDel(fieldValue, CommonRegularExpressionValidationPattern.Strong_Password_RegEx_Pattern)) ? $"Your pasword mút contain at least 1 small-case letter, 1 capital letter, 1 special character and the length should be between 6 - 10 characters{Environment.NewLine}" : fieldInvalidMessage;
                     break;
                 case FieldConstants.UserRegistrationField.PasswordCompare:
                     fieldInvalidMessage = (!_requiredValidDel(fieldValue)) ? $"You must enter a value for field: {Enum.GetName(typeof(FieldConstants.UserRegistrationField), userRegistrationField)}{Environment.NewLine}" : "";
