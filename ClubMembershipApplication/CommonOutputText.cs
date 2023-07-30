@@ -32,21 +32,21 @@ namespace ClubMembershipApplication
                 return $"{heading}{Environment.NewLine}{new string('-', heading.Length)}";
             }
         }
-        private static void WriteMainHeading()
+        public static void WriteMainHeading()
         {
             Console.Clear();
             Console.WriteLine(MainHeading);
             Console.WriteLine();
             Console.WriteLine();
         }
-        private static void WriteRegistrationHeading()
+        public static void WriteRegistrationHeading()
         {
             Console.Clear();
             Console.WriteLine(RegistrationHeading);
             Console.WriteLine();
             Console.WriteLine();
         }
-        private static void WriteLoginHeading()
+        public static void WriteLoginHeading()
         {
             Console.WriteLine(LoginHeading);
             Console.WriteLine();
